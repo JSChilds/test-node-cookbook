@@ -3,8 +3,9 @@ driver:
   region: eu-west-1
   require_chef_omnibus: true
   instance_type: t2.micro
-  subnet_id: 0e9b6138ff1ce18f2
-
+  subnet_id: subnet-011091619399c0eb8
+  security_group_ids: ["sg-04462e85395b95962"]
+  
 verifier:
   name: inspec
 
