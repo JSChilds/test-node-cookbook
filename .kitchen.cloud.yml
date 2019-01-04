@@ -6,7 +6,12 @@ driver:
   subnet_id: subnet-011091619399c0eb8
   aws_ssh_key_id: DevOpsStudents
   associate_public_ip: true
-  
+
+transport:
+  # Use our key from machine to access the test machine
+  # ssh_key: ~/.ssh/DevOpsStudents.pem
+  username: devops_student
+
 verifier:
   name: inspec
 
