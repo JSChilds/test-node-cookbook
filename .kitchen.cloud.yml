@@ -4,8 +4,13 @@ driver:
   require_chef_omnibus: true
   instance_type: t2.micro
   subnet_id: subnet-011091619399c0eb8
-  security_group_ids: ["sg-04462e85395b95962"]
+  aws_ssh_key_id: DevOpsStudents
+  associate_public_ip: true
 
+transport:
+  # Use our key from machine to access the test machine
+  ssh_key: ~/.ssh/DevOpsStudents.pem
+  
 verifier:
   name: inspec
 
