@@ -7,6 +7,10 @@ driver:
   aws_ssh_key_id: DevOpsStudents
   associate_public_ip: true
 
+transport:
+  # Use our key from machine to access the test machine
+  ssh_key: AWS_SSH_KEY_ID
+
 verifier:
   name: inspec
 
